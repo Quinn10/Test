@@ -10,7 +10,16 @@ namespace Testing
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            try
+            {
+                Console.WriteLine("Hello");
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error : " + ex.Message);
+            }
+
         }
     }
 }
