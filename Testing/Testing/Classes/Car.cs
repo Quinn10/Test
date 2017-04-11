@@ -69,7 +69,7 @@ namespace Testing.Classes
         {
             try
             {
-
+                Console.WriteLine(string.Format("{0} {1} moving", this.GetType().Name, Name));
             }
             catch (Exception ex)
             {

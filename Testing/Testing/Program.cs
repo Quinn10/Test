@@ -25,7 +25,7 @@ namespace Testing
             {
                 Console.WriteLine("Error : " + ex.Message);
             }
-
+            Console.ReadLine();
         }
 
         /// <summary>
