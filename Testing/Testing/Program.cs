@@ -19,7 +19,7 @@ namespace Testing
             try
             {
                 MoveObjects(new Car("Ferrari"));
-                MoveObjects(new Person("User"));
+                MoveObjects(new Person("Johan"));
             }
             catch (Exception ex)
             {
