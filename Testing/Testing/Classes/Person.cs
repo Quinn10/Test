@@ -72,6 +72,11 @@ namespace Testing.Classes
             catch (Exception ex)
             {
 
+
+
+
+
+
                 throw ex;
             }
         }
