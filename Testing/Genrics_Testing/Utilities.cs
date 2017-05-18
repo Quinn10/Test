@@ -8,14 +8,15 @@ namespace Genrics_Testing
 {
     public class Utilities
     {
-        public int Max(int a, int b)
-        {
-            return a > b ? a : b;
-        }
+        private static object locker = new object();
 
         public T Max<T>(T a, T b) where T : IComparable
         {
-            return a.CompareTo(b) > 0 ? a : b;
+            lock (locker)
+            {
+                var val = a.CompareTo(b) > 0 ? a : b;
+                return val;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Genrics_Testing
 {
@@ -29,11 +30,25 @@ namespace Genrics_Testing
             //var dictionary = new GenricDictionary<string, Book>();
             //dictionary.Add("Test", book);
 
-            var test = new Utilities().Max<int>(10, 1);
+            int test = 0;
+            double decimalTest = 0;
+
+            while (test == 0 && decimalTest == 0)
+            {
+                Thread thread = new Thread(() =>{
+                    test = new Utilities().Max<int>(10, 1);
+                });thread.Start();
+
+                Thread thread2 = new Thread(() =>
+                {
+                    decimalTest = new Utilities().Max<double>(100.00, 226541.50);
+                }); thread2.Start();
+            }
             Console.WriteLine(test);
+            Console.WriteLine(decimalTest);
+
             Console.ReadLine();
 
         }
     }
 }
-                                                                                
