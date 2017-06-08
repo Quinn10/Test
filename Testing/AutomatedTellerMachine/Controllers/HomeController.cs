@@ -9,16 +9,13 @@ namespace AutomatedTellerMachine.Controllers
 {
     public class HomeController : Controller
     {
-        [MyLoggingFilter]  
-        [HandleError(View="Error", ExceptionType=typeof(StackOverflowException))]      
         public ActionResult Index()
         {
             throw new StackOverflowException("This is an error");
 
             //return View();
         }
-
-        [HandleError(View = "ErrorSQL", ExceptionType = typeof(DivideByZeroException))]
+                
         public ActionResult About()
         {
             throw new DivideByZeroException("This is a devided by error");
