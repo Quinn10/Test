@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -8,19 +9,25 @@ namespace AutomatedTellerMachine.Controllers
 {
     public class HomeController : Controller
     {
-        
+        [MyLoggingFilter]  
+        [HandleError(View="Error", ExceptionType=typeof(StackOverflowException))]      
         public ActionResult Index()
         {
-            return View();
+            throw new StackOverflowException("This is an error");
+
+            //return View();
         }
 
+        [HandleError(View = "ErrorSQL", ExceptionType = typeof(DivideByZeroException))]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            throw new DivideByZeroException("This is a devided by error");
 
-            return View("About");
+            //{
+            //    ViewBag.Message = "Your application description page.";
+
+            //    return View("About");
         }
-
 
         public ActionResult Contact()
         {
@@ -28,7 +35,6 @@ namespace AutomatedTellerMachine.Controllers
 
             return View();
         }
-
 
         [HttpPost]
         public ActionResult Contact(string message)
@@ -58,7 +64,6 @@ namespace AutomatedTellerMachine.Controllers
             //    JsonRequestBehavior.AllowGet);
 
             return RedirectToAction("About");
-
         }
 
         public ActionResult Quinten()
