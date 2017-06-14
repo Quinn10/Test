@@ -9,21 +9,22 @@ namespace AutomatedTellerMachine.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCache(Duration=1800)]
         public ActionResult Index()
         {
-            throw new StackOverflowException("This is an error");
-
-            //return View();
+            //throw new StackOverflowException("This is an error");
+            return View();
         }
-                
+
         public ActionResult About()
         {
-            throw new DivideByZeroException("This is a devided by error");
+            //throw new DivideByZeroException("This is a devided by error");
 
-            //{
-            //    ViewBag.Message = "Your application description page.";
+            {
+                ViewBag.Message = "Your application description page.";
 
-            //    return View("About");
+                return View("About");
+            }
         }
 
         public ActionResult Contact()
