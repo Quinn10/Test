@@ -30,4 +30,27 @@
     </div>
 </div>
 
-Your are using @Request.Browser.Browser, that is okay!:)
+@*Your are using @Request.Browser.Browser, that is okay!:)
+
+
+@{var amounts = new List<Decimal> { 100, 25.50M, -40, 275.99M };
+}
+
+<ul>
+    @{foreach (var amount in amounts)
+        {
+                <li>@formatAmount(amount)</li>
+        }
+    }
+</ul>>
+
+
+@helper formatAmount(decimal amount)
+{
+var color = "green";
+if (amount < 0)
+{
+    color = "red";
+}
+    <span style="color:@color">@string.Format("{0:c}", amount)</span>
+}*@

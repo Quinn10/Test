@@ -61,7 +61,7 @@ namespace AutomatedTellerMachine.Controllers
             //return Json(new { name = "serial", value = serial }, 
             //    JsonRequestBehavior.AllowGet);
 
-            return RedirectToAction("About");
+            return RedirectToAction("Index");
         }
 
         public ActionResult Quinten()
