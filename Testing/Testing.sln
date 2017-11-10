@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{0AFAB303-AF3F-4EF4-9594-E653B9EA6E6A}"
 EndProject
@@ -60,6 +60,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{DE95A56B-F8F7-4297-9165-E122FB41109D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingWPF", "TestingWPF\TestingWPF.csproj", "{10597D35-06F8-4161-B510-F5535C0BC8CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskForms", "..\..\..\..\Documents\Visual Studio 2017\Projects\TaskTutorial\TaskForms\TaskForms.csproj", "{A17F685D-3949-4E74-ABAD-A9E535F73275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTutorial", "..\..\..\..\Documents\Visual Studio 2017\Projects\TaskTutorial\TaskTutorial\TaskTutorial.csproj", "{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,14 @@ Global
 		{10597D35-06F8-4161-B510-F5535C0BC8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10597D35-06F8-4161-B510-F5535C0BC8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10597D35-06F8-4161-B510-F5535C0BC8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17F685D-3949-4E74-ABAD-A9E535F73275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17F685D-3949-4E74-ABAD-A9E535F73275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17F685D-3949-4E74-ABAD-A9E535F73275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17F685D-3949-4E74-ABAD-A9E535F73275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,5 +166,10 @@ Global
 		{A33ECBA6-3739-4B6D-8A32-E3DCEBBE0E7C} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
 		{AC454990-7629-4DFC-9CCB-797906277BE9} = {7F4E0852-8A04-4754-8705-DA146C7EFFCC}
 		{10597D35-06F8-4161-B510-F5535C0BC8CF} = {DE95A56B-F8F7-4297-9165-E122FB41109D}
+		{A17F685D-3949-4E74-ABAD-A9E535F73275} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
+		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19C8BF7F-CE36-4499-965F-8ECCFAA6316A}
 	EndGlobalSection
 EndGlobal
