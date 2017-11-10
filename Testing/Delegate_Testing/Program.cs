@@ -14,7 +14,9 @@ namespace Delegate_Testing
 
         static void Main(string[] args)
         {
+            // createthe handler
             var obj = new SomeMethodPtr(SomeMethod);
+            // checked if handler is not null and then execute the method
             obj?.Invoke("Test");
 
             Console.ReadLine();
