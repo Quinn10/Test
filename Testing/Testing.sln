@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskForms", "..\..\..\..\Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTutorial", "..\..\..\..\Documents\Visual Studio 2017\Projects\TaskTutorial\TaskTutorial\TaskTutorial.csproj", "{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker_Test_1", "BackgroundWorker_Test_1\BackgroundWorker_Test_1.csproj", "{67FAEE09-F382-45D6-90F7-8A035336F5D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67FAEE09-F382-45D6-90F7-8A035336F5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67FAEE09-F382-45D6-90F7-8A035336F5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67FAEE09-F382-45D6-90F7-8A035336F5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67FAEE09-F382-45D6-90F7-8A035336F5D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{10597D35-06F8-4161-B510-F5535C0BC8CF} = {DE95A56B-F8F7-4297-9165-E122FB41109D}
 		{A17F685D-3949-4E74-ABAD-A9E535F73275} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
 		{D5012C0D-945B-4F38-AFAF-2CB78D1ACA99} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
+		{67FAEE09-F382-45D6-90F7-8A035336F5D3} = {3952C378-B7D0-4837-AFA0-93E2BD5E1B69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19C8BF7F-CE36-4499-965F-8ECCFAA6316A}
